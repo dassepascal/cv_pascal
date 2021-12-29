@@ -1,0 +1,575 @@
+
+/* reset*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'bungee_layers_regularregular';
+    src: url('BungeeLayers-Regular-webfont.eot');
+    src: url('BungeeLayers-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('BungeeLayers-Regular-webfont.woff2') format('woff2'),
+        url('polices/BungeeLayers-Regular-webfont.woff') format('woff'),
+        url('BungeeLayers-Regular-webfont.ttf') format('truetype'),
+        url('BungeeLayers-Regular-webfont.svg#bungee_layers_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+        url('polices/ballpark.woff') format('woff'),
+        url('polices/ballpark.ttf') format('truetype'),
+        url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dayrom';
+
+    src:
+        url('polices/dayrom.woff') format('woff');
+
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/ire_img/bkgd_page.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* HEADER  */
+.wrapper {
+    width: 1024px;
+    margin: 30px auto 0 auto;
+}
+
+header {
+    height: 500px;
+    position: relative;
+    top: 30px;
+}
+
+header nav {
+    border: 1px dashed #fff;
+    float: right;
+}
+
+header nav ul li {
+    list-style: none;
+    float: left;
+}
+
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 150%;
+    display: block;
+    padding: 0 20px;
+}
+
+header nav ul li a:hover {
+    background: #f6f6f6;
+    color: #305a47;
+}
+
+.pointille {
+    border-right: 1px dashed #fff;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+/*fin header nav*/
+.menu {
+    padding-top: 20px;
+    padding-right: 45px;
+    height: 20px;
+    width: 700px;
+    float: right;
+}
+
+
+.logo {
+    width: 160px;
+    float: left;
+}
+
+.titres {
+    position: relative;
+    top: 162px;
+    text-align: center;
+}
+
+.titres h2 {
+    font-family: 'Dayrom ';
+    color: #fff;
+    margin-top: 0px;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.titres h4 {
+    color: #fff;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.titres h1 {
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 74px;
+    font-family: 'bungee_layers_regularregular';
+    text-align: center;
+    clear: both;
+}
+
+
+
+
+#main {
+    background-color: #f6f6f6;
+    padding: 50px 0 50px 0;
+}
+
+#militaire {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+    padding-top: 50px;
+}
+
+#militaire .img-1 {
+
+    width: 370px;
+    height: 273px;
+}
+
+#militaire .img-1:hover {
+    opacity: 0.5;
+}
+
+.borderSolidBlack1 {
+    border: 1px solid black;
+}
+
+.textMilitaire {
+    text-align: left;
+    flex: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.textMilitaire h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nom {
+    color: #1CE6E6;
+}
+
+.date {
+    color: #777f7e;
+}
+
+.product-1 {
+    width: 20%;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.product-1 p {
+    text-align: center;
+}
+
+.btn {
+    color: #a22755;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #ccc;
+}
+
+
+
+
+#informaticienne {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+    padding-top: 35px;
+}
+
+#informaticienne .img-2:hover {
+    opacity: 0.5;
+}
+
+
+.textInformaticienne {
+    text-align: left;
+    flex: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+
+.textInformaticienne h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+.boite {
+    width: 480px;
+    height: 480px;
+    margin: 20px 16px;
+    background-color: #ddeae4;
+}
+
+.main-boite {
+    width: 1024px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.txtOverlay {
+    width: 480px;
+    height: 480px;
+    opacity: 0.9;
+    text-align: center;
+    background: url(../images/ire_img/saut.jpg) no-repeat;
+    border: 1px solid black;
+}
+
+.theText {
+    opacity: 0;
+    position: relative;
+    top: 170px;
+}
+
+.txtOverlay:hover .theText {
+    opacity: 1;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.txtOverlay span {
+    font-size: 35px;
+    width: 40px;
+}
+
+.button-2 {
+    display: block;
+    background: #0c7f06;
+    width: 189px;
+    line-height: 53px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 36px auto;
+    font-weight: 50;
+}
+
+.button-2:hover {
+    color: #ccc;
+}
+
+.vignette {
+    text-align: center;
+    float: left;
+    width: 240px;
+    height: 240px;
+
+    padding-top: 15px;
+    background-color: #ddeae4;
+}
+
+.borderHg {
+    border: 3px solid #305a47;
+}
+
+.borderHd {
+    border-top: 3px solid #305a47;
+    border-right: 3px solid #305a47;
+    border-bottom: 3px solid #305a47;
+}
+
+.borderBg {
+    border-left: 3px solid #305a47;
+    border-bottom: 3px solid #305a47;
+    border-right: 3px solid #305a47;
+}
+
+.borderBd {
+    border-bottom: 3px solid #305a47;
+    border-right: 3px solid #305a47;
+}
+.clear {
+    clear: both;
+}
+/*information*/
+.information{
+   /* position: relative;*/
+    width: 992px;
+    border: 3px solid #305a47 ;
+   margin: 20px 16px;
+    background-color: #ddeae4;
+}
+label{
+    background-color: red;
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+}
+
+#nom{
+    width: 500px;
+    padding: 10px 0 10px 5px;
+    font-size: 20px;
+}
+#prenom{
+    width: 245px;
+    padding: 10px 0 10px 5px;
+    font-size: 20px;
+
+}
+#email{
+    width: 250px;
+    position:absolute;
+    left: 250px;
+    top: 120px;
+    padding: 10px 0 10px 5px;
+    font-size: 20px;
+}
+
+#message{
+    font-size: 20px;
+}
+textarea{
+
+  margin-top: -14px;
+    height: 100px;
+    width: 500px;
+}
+.formulaire h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-size: 30px;
+}
+.formulaire {
+    width: 500px;
+    margin: 70px auto;
+
+    position: relative;
+}
+#envoyer{
+    width: 500px;
+    margin-top: 15px;
+    height: 40px;
+background-color: #305a47 ;
+color: #fff;
+font-size: 25px;
+border: none;
+}
+#envoyer:hover{
+    background-color: #109177;
+
+}
+
+
+
+/***************footer*************************/
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 50px;
+    background-color:  #305a47 ;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer nav ul li {
+    list-style: none;
+    float: left;
+    margin: 0px 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 10px;
+}
+
+footer nav ul li a:hover {
+    color: #ccc;
+}
+
+footer nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer nav ul {
+    margin-top: 5px;
+}
