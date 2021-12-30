@@ -20,6 +20,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background: #a2e0f8
 }
 
 h1,
@@ -135,7 +136,7 @@ body{
   font-weight: 300;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
+
 }
 
 
@@ -162,4 +163,42 @@ body{
   top: 0;
   transform: rotate(-135deg);
 }
+/****************** effet text***********************/
 
+.title{
+  position: relative;
+
+}
+.title span{
+  color: orangered;
+  font-size: 75px;
+    transition: 0.5s;
+    font-weight: 100;
+    will-change:transform;
+    display:inline-block ;
+
+}
+.s1 span{
+  transform-origin: bottom;
+
+}
+.s2 span{
+  transform-origin: top;
+  transform: translateY(100%)
+  rotateX(90deg) ;
+}
+.s2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title:hover .s1 span{
+  transform: translateY(-100%)
+  rotateX(-90deg)
+
+}
+.title:hover .s2 span{
+  transform: translateY(0%)
+  rotateX(0deg)
+
+}
